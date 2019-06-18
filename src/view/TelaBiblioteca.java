@@ -306,10 +306,10 @@ public class TelaBiblioteca extends javax.swing.JFrame {
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
         if(this.edit==0){
          //salvando o registro  novo
-         LivroController.cadastrarContato(txtNome.getText(),txtEditora.getText(), txtEdicao.getText(), txtArea.getText());
+         LivroController.cadastrarLivro(txtNome.getText(),txtEditora.getText(), txtEdicao.getText(), txtArea.getText());
         }else{
            //salvando o registro editado
-        LivroController.editarContato(txtNome.getText(),txtEditora.getText(), txtEdicao.getText(), txtArea.getText(), tblLista.getSelectedRow());
+        LivroController.editarLivro(txtNome.getText(),txtEditora.getText(), txtEdicao.getText(), txtArea.getText(), tblLista.getSelectedRow());
             
         }
 
@@ -321,7 +321,7 @@ public class TelaBiblioteca extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
-        LivroController.excluirContato(tblLista);
+        LivroController.excluirLivro(tblLista);
         //Recarregando a lista
         LivroController.inserirTabela(tblLista, Biblioteca.livros);
     }//GEN-LAST:event_btnExcluirActionPerformed
