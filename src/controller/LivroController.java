@@ -46,7 +46,7 @@ public class LivroController {
     
     }
     
-    public static void cadastrarContato(String nome, String editora, String edicao, String area){
+    public static void cadastrarLivro(String nome, String editora, String edicao, String area){
        //Criando objeto do tipo Livro
         Livro c= new Livro();
         c.setNome(nome);
@@ -63,7 +63,7 @@ public class LivroController {
         
     }
     
-    public static void editarContato(String nome, String editora, String edicao, String area, int pos){
+    public static void editarLivro(String nome, String editora, String edicao, String area, int pos){
      //Criando objeto do tipo livro
          Livro c= new Livro();
         c.setNome(nome);
@@ -80,7 +80,7 @@ public class LivroController {
     
     }
     
-      public static void excluirContato(JTable tabela){
+      public static void excluirLivro(JTable tabela){
           //Quando não se tem nenhuma linha selecionada, é igual a -1
           if(tabela.getSelectedRow()==-1){
               JOptionPane.showMessageDialog(null, "Selecione qual linha deseja excluir -> ERROR");
