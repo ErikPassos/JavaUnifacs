@@ -16,7 +16,7 @@ import model.Livro;
  */
 public class LivroController {
     
-    // referenciar a classe Agenda para acessar a lista
+    
        static Biblioteca biblio; // acessando minha classe principal atraves dessa classe
     
     
